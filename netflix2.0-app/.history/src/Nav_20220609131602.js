@@ -1,26 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './Nav.css'
 
 function Nav () {
     const [show, handleShow] = useState(false);
 
     const transitionNavBar = () => {
-        if(window.scrollY > 100) {
+        if(window.screenY > 100) {
             handleShow(true);
         } else {
             handleShow(false)
         }
     }
-
-    useEffect(()=>{
-        window.addEventListener('scroll', transitionNavBar)
-        return () => window.removeEventListener('scroll', transitionNavBar);
-    }, [])
-
   return (
-    <div className={`nav ${show && "nav__black"}`}>
-        {/* The above logic means if the screen is past 100% screen height
-        when scrolling down, then 'show' the back nav bar. */}
+    <div className='nav nav__black'>
         <div className="nav__contents">
         <img 
         className='nav__logo'

@@ -19,8 +19,6 @@ function Nav () {
 
   return (
     <div className={`nav ${show && "nav__black"}`}>
-        {/* The above logic means if the screen is past 100% screen height
-        when scrolling down, then 'show' the back nav bar. */}
         <div className="nav__contents">
         <img 
         className='nav__logo'
