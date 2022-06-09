@@ -1,0 +1,16 @@
+.nav__contents{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__logo{
+    position: fixed;
+    left: 0px
+}
+
+.nav__avatar{
+    position: fixed;
+    right: 20px;
+    width: 30px;
+    height: 30px
+}
