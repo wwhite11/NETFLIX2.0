@@ -31,20 +31,25 @@ function Banner() {
     className='banner' 
     style={{
         backgroundSize: "cover",
-        backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
+        backgroundImage: `url("https://image.tmbd.org/t/p/original/${movie?.backdrop_path}")`,
         backgroundPosition: "center center"
     }}
     >
         <div className="banner__contents">
             <h1 className="banner__title">
-                {movie?.title || movie?.name || movie?.original_name}
+                Movie Name
             </h1>
             <div className="banner__buttons">
                 <button className='banner__button'>Play</button>
                 <button className='banner__button'>My List</button>
             </div>
             <h1 className="banner__description">
-                {truncate(movie?.overview, 150)}
+                {truncate(`This is a test description This is a test descriptionThis is a test 
+                descriptionThis is a test descriptionThis is a test descriptionThis is a test descriptionThis is 
+                a test descriptionThis is a test descriptionThis is a test descriptionThis is a test 
+                 descriptionThis is a test description This is a test descriptionThis is a test 
+                 descriptionThis is a test description
+                 This is a test descriptionThis is a test descriptionThis is a test description`, 150)}
             </h1>
         </div>
 
@@ -66,5 +71,4 @@ In the axios.get() I am accessing the requests file and then I will access the
     Then I will set the  'setMovie' variable to be equal to a random index in an array, which in return 
     selects a random movie from the netflixOriginals request.
 
-Then I replaced the backgroundImage of the banner with random movie images we get that is placed and updated in the Movie Variable.
 */
