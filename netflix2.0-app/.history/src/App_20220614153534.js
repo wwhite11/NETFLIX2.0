@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import HomeScreen from './screens/HomeScreen';
+import HomeScreen from './HomeScreen';
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,9 +11,12 @@ function App() {
   return (
     
     <div className="app">
+      <HomeScreen />
      <Router>
         <Routes>
-          <Route exact path="/" element={<HomeScreen />}/>
+          <Route path="/">
+          
+          </Route>
         </Routes>
     </Router>
     </div>
