@@ -71,9 +71,6 @@ font-size: 1.3rem;
 font-weight: 400;
 }
 
-.loginScreen__input{
-    margin: 20px;
-}
 
 .loginScreen__input > form > input{
     padding: 10px;
