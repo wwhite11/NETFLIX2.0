@@ -72,7 +72,7 @@ font-weight: 400;
 }
 
 .loginScreen__input{
-    margin: 20px;
+    -ms-text-combine-horizontal: 20px;
 }
 
 .loginScreen__input > form > input{

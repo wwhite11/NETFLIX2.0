@@ -1,0 +1,8 @@
+.loginScreen{
+    position: relative;
+    height: 100%;
+}
+.loginScreen__logo{
+    position: fixed;
+    left: 0;
+}
