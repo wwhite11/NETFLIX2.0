@@ -1,20 +1,21 @@
 import React from 'react';
 import './App.css';
-import HomeScreen from './screens/HomeScreen';
+import HomeScreen from './HomeScreen';
 import {
   BrowserRouter as Router,
-  Routes,
+  Switch,
   Route,
 } from "react-router-dom";
 
 function App() {
   return (
-    
     <div className="app">
      <Router>
-        <Routes>
-          <Route exact path="/" element={<HomeScreen />}/>
-        </Routes>
+        <Switch>
+          <Route path="/">
+          <HomeScreen />
+          </Route>
+        </Switch>
     </Router>
     </div>
   );
